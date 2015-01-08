@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Md5search by dydx</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Md5search</h1>
+        <h2>Trie graphs and MD5 hashes</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/dydx/md5search/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/dydx/md5search/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/dydx/md5search" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="trie-graphs-and-md5-hashes" class="anchor" href="#trie-graphs-and-md5-hashes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trie graphs and MD5 hashes</h3>
+
+<p>Using a naive implementation of trie graphs in Python, we can store MD5 hashes and plaintext, and relatively quickly traverse the graph to derive plaintext. This is a toy project of mine to look at ways to store strings and do lookups. The use of this tool for nefarious purposes is not explicitly condoned, but I don't personally have any problems with you using it that way. Good luck.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage:</h3>
+
+<pre><code>$&gt;python filesystem.py ~/path/to/wordlist.txt
+$&gt;Done creating filesystem
+$&gt;python search.py
+$&gt; Enter an md5 hash to find: 4cb9c8a8048fd02294477fcb1a41191a
+$&gt; changeme
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
