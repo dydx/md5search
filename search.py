@@ -14,11 +14,11 @@ def query_filesystem(string):
         if os.path.isdir(string[index]):
             os.chdir(string[index])
         else:
-            print "Could not find plaintext for '" + string + "'."
+            return
     if startcwd != os.getcwd():
         return os.getcwd() + '/plaintext.txt'
     else:
-        print "Could not find plaintext for '" + string + "'."
+        return
 
 def read_plaintext(path):
     fd = open(path, 'r')
@@ -28,7 +28,10 @@ def read_plaintext(path):
 
 def search(string):
     result = query_filesystem(string)
-    return read_plaintext(result)
+    if result:
+        return read_plaintext(result)
+    else:
+        return "Could not find plaintext for'"  + string + "'."
 
 def main():
     string = input("Enter md5 hash to find: ")
