@@ -13,12 +13,11 @@ Ex:
 Very naive in nature and in implementation, and probably takes up way too
 much space given a large enough corpus of hashes.
 
-Usage (as best I remember):
-$>python filesystem.py
-~/home/dydx/documents/wordlist.txt
-Done creating filesystem
-
-$>python search.py
-Enter an md5 hash to find:
-4cb9c8a8048fd02294477fcb1a41191a
-changeme
+```
+➜  md5search git:(master) ✗ python filesystem.py
+Please enter the path to a valid wordlist: '/home/dydx/Development/wordlist.txt'
+Done creating filesystem.
+➜  md5search git:(master) ✗ python search.py
+Enter md5 hash to find: '6c19750fcc35a202bdc5345746aa33b0'
+Brandon1
+```
